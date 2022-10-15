@@ -1,0 +1,35 @@
+.grid {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin-inline-start: 2%;
+    margin-inline-end: 2%;
+    
+}
+.box {
+    margin-left: 20px;
+    width: 18rem;
+    
+}
+.max{
+    height: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.header{
+    margin-bottom: 2%;
+    margin-top:2%;
+    background-image: url("https://discover.fiverr.com/wp-content/uploads/disover-main-banner-korshenboym-noresize-1.jpg");
+    background-size: cover;
+    height: 30vh;
+    color:white; 
+    align-items: center; 
+    padding: 5% 2%;
+    background-repeat: repeat;
+    
+}
+
+
