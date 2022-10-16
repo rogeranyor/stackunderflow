@@ -2,7 +2,7 @@ import { Component } from "react";
 
 function NoLoggedNavBar() {
   return (
-    <nav class="navbar navbar-expand-sm navbar-light bg-light" aria-label="Offcanvas navbar small">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top" aria-label="Offcanvas navbar small">
       <div class="container-fluid">
         <a class="navbar-brand" href="/home">Fiverr</a>
         <button class="navbar-toggler"
@@ -14,7 +14,7 @@ function NoLoggedNavBar() {
         </button>
         <div class="offcanvas offcanvas-start" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Fiverr</h5>
+            <a class="nav-link active"  id="offcanvasNavbar2Label" href="/home"><h1>Fiverr</h1> </a>
             <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">

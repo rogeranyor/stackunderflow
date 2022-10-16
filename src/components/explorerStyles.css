@@ -11,17 +11,19 @@
 .box {
     margin-left: 20px;
     width: 18rem;
-    
 }
+.size{
+    max-height:40vh;
+}   
+    
 .max{
-    height: 3rem;
+    height: 5vh;
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
 }
 
 .header{
     margin-bottom: 2%;
-    margin-top:2%;
     background-image: url("https://discover.fiverr.com/wp-content/uploads/disover-main-banner-korshenboym-noresize-1.jpg");
     background-size: cover;
     height: 30vh;
