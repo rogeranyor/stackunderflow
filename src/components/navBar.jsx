@@ -1,10 +1,13 @@
 import { Component } from "react";
+import './navBar.css'
 
+
+//#TODO: Poner lo de underL en la NoLogged
 function NoLoggedNavBar() {
   return (
-    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top" aria-label="Offcanvas navbar small">
+    <nav class="navbar navbar-expand-sm navbar-light " aria-label="Offcanvas navbar small">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/home">Fiverr</a>
+        <a class="navbar-brand" href="/home"><h1>UsArt</h1></a>
         <button class="navbar-toggler"
           type="button"
           data-bs-toggle="offcanvas"
@@ -14,19 +17,19 @@ function NoLoggedNavBar() {
         </button>
         <div class="offcanvas offcanvas-start" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
           <div class="offcanvas-header">
-            <a class="nav-link active"  id="offcanvasNavbar2Label" href="/home"><h1>Fiverr</h1> </a>
+            <a  class="nav-link active"  id="offcanvasNavbar2Label" href="/home"><h1>UsArt</h1> </a>
             <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style={{zIndex:"2"}}>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/explore">Explore</a>
+                  <a style={{color:"white"}} class="nav-link active" aria-current="page" href="/explore">Explore</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/sign-in">Log in</a>
+                  <a style={{color:"white"}} class="nav-link" href="/sign-in">Log in</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/join">Join</a>
+                  <a style={{color:"white"}} class="nav-link" href="/join">Join</a>
                 </li>
               </ul>
           </div>
@@ -37,34 +40,35 @@ function NoLoggedNavBar() {
 }
 function LoggedNavBar() {
   return (
-    <nav class="navbar navbar-expand-sm navbar-light bg-light" aria-label="Offcanvas navbar small">
+    <nav class="navbar navbar-expand-sm navbar-light" aria-label="Offcanvas navbar small">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/home">Fiverr</a>
-        <button class="navbar-toggler"
+        <a class="navbar-brand p-4 " href="/home"><h1>UsArt</h1></a>
+        <button style={{background:"white"}} class="navbar-toggler" id="button"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar2"
-          aria-controls="offcanvasNavbar2">
+          aria-controls="offcanvasNavbar2"
+          >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-start" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas offcanvas-start text-bg-dark"  id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Fiverr</h5>
-            <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">UsArt</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/explore">Explore</a>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 " style={{zIndex:"2"}}>
+                <li class="nav-item px-3">
+                  <a style={{color:"white"}} class="nav-link active underL px-3" aria-current="page" href="/explore">Explore</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/favoritos">Favoritos</a>
+                <li class="nav-item px-3 ">
+                  <a style={{color:"white"}} class="nav-link underL px-3" href="/favoritos">Favoritos</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/buzon">Buzon</a>
+                <li class="nav-item px-3">
+                  <a style={{color:"white"}} class="nav-link underL px-3" href="/buzon">Buzon</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/perfil">Mi perfil</a>
+                <li class="nav-item px-3">
+                  <a style={{color:"white"}} class="nav-link underL px-3" href="/perfil">Mi perfil</a>
                 </li>
               </ul>
           </div>
@@ -73,6 +77,7 @@ function LoggedNavBar() {
     </nav>
   );
 }
+
 
 export default class navBar extends Component {
   constructor(props) {

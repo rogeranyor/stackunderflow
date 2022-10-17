@@ -8,6 +8,10 @@
     margin-inline-end: 2%;
     
 }
+
+a,p{
+    color: black;
+}
 .box {
     margin-left: 20px;
     width: 18rem;
